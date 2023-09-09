@@ -1,12 +1,29 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* navbar */
 
 .navbar .container {
   padding: 0;
+}
+
+
+.navbar-custom ul li a {
+  color: #fff;
+  margin-left: 30px;
+}
+
+#resume {
+  border: 2px solid #0F97FB;
+  border-radius: 10px;
+}
+
+#photo {
+  border-radius: 50%;
+  border: 3px solid #0F97FB;
 }
 
 /* intro */
@@ -18,7 +35,7 @@
 #intro .container {
   display: flex;
   flex-direction: column;
-  padding: 5% 0 10% 0;
+  padding: 10% 0 15% 0;
 }
 
 #intro .container h1 {
@@ -29,6 +46,7 @@
 }
 
 #intro .container h1 span {
+  font-family: 'Syne', sans-serif;
   color: #0F97FB;
 }
 
@@ -42,12 +60,52 @@
 
 /* projects */
 
+#projects {
+  background: linear-gradient(180deg, #1B3252 83.53%, #020406 100%);
+  padding-bottom: 5%;
+}
+
+#projects h3 {
+  color: #fff;
+  font-family: 'Syne', sans-serif;
+  font-weight: 500;
+}
+
 #projects .container {
   display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
   grid-template-areas: 
     "first second"
     "third fourth";
-  grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 2.5%;
+    padding: 0;
+}
+
+div.project {
+  width: auto;
+  height: 450px;
+  /* background-color: green; */
+  display: flex;
+}
+
+div.project .card {
+  margin: 0 auto;
+}
+
+#project1 {
+  grid-area: first;
+}
+
+#project2 {
+  grid-area: second;
+}
+
+#project3 {
+  grid-area: third;
+}
+
+#project4 {
+  grid-area: fourth;
 }
 
 @keyframes App-logo-spin {
