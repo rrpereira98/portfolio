@@ -21,6 +21,11 @@
   border-radius: 10px;
 }
 
+#resume:hover {
+  border: 2px solid #107ecc;
+  color: #107ecc;
+}
+
 #photo {
   border-radius: 50%;
   border: 3px solid #0F97FB;
@@ -106,6 +111,11 @@ div.project .card {
 
 #project4 {
   grid-area: fourth;
+}
+
+.card img {
+  height: 100%;
+  object-fit: cover;
 }
 
 @keyframes App-logo-spin {

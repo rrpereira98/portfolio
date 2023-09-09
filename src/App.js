@@ -15,7 +15,7 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link" href="#">Projects</a>
+                <a className="nav-link" href="#projects">Projects</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">Contact</a>
@@ -41,41 +41,21 @@ function App() {
           <div className='project' id='project1'>
             <div className="card" style={{width: "auto"}}>
               <img src={require("./assets/images/index_footpick 1.png")} className="card-img-top" alt="..."/>
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-              </div>
             </div>
           </div>
           <div className='project' id='project2'>
             <div className="card" style={{width: "auto"}}>
               <img src={require("./assets/images/index_footpick 1.png")} className="card-img-top" alt="..."/>
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-              </div>
             </div>
           </div>
           <div className='project' id='project3'>
             <div className="card" style={{width: "auto"}}>
               <img src={require("./assets/images/index_footpick 1.png")} className="card-img-top" alt="..."/>
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-              </div>
             </div>
           </div>
           <div className='project' id='project4'>
             <div className="card" style={{width: "auto"}}>
               <img src={require("./assets/images/index_footpick 1.png")} className="card-img-top" alt="..."/>
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
-              </div>
             </div>
           </div>
         </div>
