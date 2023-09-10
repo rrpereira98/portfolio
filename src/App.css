@@ -67,7 +67,7 @@
 
 #projects {
   background: linear-gradient(180deg, #1B3252 83.53%, #020406 100%);
-  padding-bottom: 5%;
+  padding-bottom: 7%;
 }
 
 #projects h3 {
@@ -116,6 +116,28 @@ div.project .card {
 .card img {
   height: 100%;
   object-fit: cover;
+}
+
+/* footer */
+
+#contact {
+  background-color: #020406;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+#contact div {
+  padding: 0;
+  display: flex;
+}
+
+#contact span {
+  margin-right: 10px;
+}
+
+#contact p {
+  color: #fff;
+  margin-left: auto;
 }
 
 @keyframes App-logo-spin {
