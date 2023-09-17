@@ -35,6 +35,7 @@
 
 #intro {
   background: linear-gradient(180deg, #020406 0%, #1B3252 100%);
+  height: 100vh;
 }
 
 #intro .container {
@@ -132,6 +133,7 @@ div.project .card {
 #contact div {
   padding: 0;
   display: flex;
+  width: 100%;
 }
 
 #contact span {
@@ -139,8 +141,17 @@ div.project .card {
 }
 
 #contact p {
-  color: #fff;
   margin-left: auto;
+}
+
+#contact p a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+}
+
+#contact p a:hover {
+  color: #0F97FB;
 }
 
 @keyframes intro-h1-Anim {

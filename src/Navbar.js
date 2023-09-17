@@ -1,3 +1,5 @@
+import Pdf from "./assets/images/Rodrigo_Pereira_cv_wd.pdf"
+
 function Navbar() {
     return (
         <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" style={{backgroundColor: "#020406"}}>
@@ -17,7 +19,7 @@ function Navbar() {
                     <a className="nav-link" href="#contact">Contact</a>
                 </li>
                 <li className="nav-item">
-                    <a id='resume' className="nav-link" href="#">Resume</a>
+                    <a id='resume' className="nav-link" href={Pdf} target='_blank' rel='noopener noreferrer'>Resume</a>
                 </li>
                 </ul>
             </div>

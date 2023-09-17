@@ -1,28 +1,25 @@
+import { Reveal } from "./Animations"
+
 function Projects() {
+    const projectsList = [{projectNumber: 1, src: require("./assets/images/index_footpick 1.png")}, {projectNumber: 2, src: require("./assets/images/index_footpick 1.png")}, {projectNumber: 3, src: require("./assets/images/index_footpick 1.png")}, {projectNumber: 4, src: require("./assets/images/index_footpick 1.png")}]
+
+    const ProjectCard = projectsList.map(project => {
+        return (
+            <Reveal>
+            <div className='project' id={`project${project.projectNumber}`}>
+                <div className="card" style={{width: "auto"}}>
+                    <img src={project.src} className="card-img-top" alt="..."/>
+                </div>
+            </div>
+            </Reveal>
+        )
+    })
+
     return (
         <div className='container-fluid' id='projects'>
             <div className='container'><h3>Projects</h3></div>
             <div className='container'>
-            <div className='project' id='project1'>
-                <div className="card" style={{width: "auto"}}>
-                <img src={require("./assets/images/index_footpick 1.png")} className="card-img-top" alt="..."/>
-                </div>
-            </div>
-            <div className='project' id='project2'>
-                <div className="card" style={{width: "auto"}}>
-                <img src={require("./assets/images/index_footpick 1.png")} className="card-img-top" alt="..."/>
-                </div>
-            </div>
-            <div className='project' id='project3'>
-                <div className="card" style={{width: "auto"}}>
-                <img src={require("./assets/images/index_footpick 1.png")} className="card-img-top" alt="..."/>
-                </div>
-            </div>
-            <div className='project' id='project4'>
-                <div className="card" style={{width: "auto"}}>
-                <img src={require("./assets/images/index_footpick 1.png")} className="card-img-top" alt="..."/>
-                </div>
-            </div>
+                {ProjectCard}
             </div>
         </div>
     )
